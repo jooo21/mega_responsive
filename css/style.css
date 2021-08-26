@@ -61,8 +61,6 @@
 .header .nav li >ul li a {font-size: 14px; font-weight: 100; letter-spacing: 1px;}
 .header .nav li >ul li:hover a {text-decoration: underline;}
 
-
-ul.util_up {}
 ul.util_up li a {font-size: 13px; font-weight: 100; margin-right: 20px; color:#999;}
 ul.util_up li a:hover {text-decoration: underline;}
 
