@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* 스킵 내비게이션 */
+#skip {position:absolute;left:0; top:-200px; width: 100%; border-bottom: 1px solid #eee; line-height: 30px; background: #333; text-align: center; z-index: 5;}
+#skip a {display: inline-block; padding:5px; margin-right: 50px; color:#fff;}
+#skip a:last-child {margin-right: 0;}
+#skip:active, #skip:focus {top:0;}
+/* 팝업창  */
+#popup .content img{display: block; border-radius: 3% 3% 0 0;}
+#popup .wrap {height:40px;text-align: right;padding:8px 35px 5px 0;background: #eee;border-radius: 0 0 10px 10px; box-sizing: border-box;}
+#popup .wrap input {display: inline-block; margin-right: 5px; vertical-align: -1px;}
+#popup .wrap label {display: inline-block; font-size: 14px; font-weight: normal;}
+#popup .close {position: absolute; bottom:10px; right:10px; display: inline-block; width:20px; height:20px; background: rgba(0, 0, 0, 0);}
+#popup .close:before {
+    content:"";width: 16px;height: 1px;
+    background: #646464;
+    transform-origin: left;
+    transform:rotate(45deg) translateX(-50%);
+    position: absolute;left: 50%; top: 8px;
+}
+#popup .close:after {
+    content:"";width: 16px;height: 1px;
+    background: #646464;
+    transform-origin: left;
+    transform:rotate(-45deg) translateX(-50%);
+    position: absolute;left: 50%; top: 8px;
+}
+
+/* 레이아웃 */
+#header {position:absolute;left: 0; top:0; width: 100%; min-height: 80px; background: rgba(0, 0, 0, 0.2); color:#fff; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+#banner {min-height:500px; background:rgba(0, 0, 0, 0.6);}
+#con { min-height: 1000px; background:rgba(0, 0, 0, 0.2);}
+
+/* 가운데 영역 */
+.container {position:relative; width:1160px; margin: 0 auto;}
+/* 로우영억 */
+.row {padding: 0px 30px;}
+
+/* 헤더 영역 */
+.header { position:relative; padding-top:10px;}
+.header h1 {position: absolute; left: 50%; top:23px; text-align: center; transform: translateX(-50%);}
+.header h1 a {width: 150px;}
+.header h1 a img {display: block;}
+
+.header ul li a {font-size: 16px;color:#fff;}
+.header #nav {padding:20px 120px 0px;}
+.header #nav {margin:0 auto;}
+.header .nav {position:relative;}
+.header .nav >li {position:relative; display: inline-block;width: 11%; text-align: center;}
+.header .nav >li >a {position:relative; z-index: 1; display: block; font-size: 18px; line-height: 60px; letter-spacing: -1px;}
+.header .nav >li:hover >a:after {
+    content:""; display: block; position:absolute; left:50%;bottom:0px;
+    width: 40%; height:2px; background: #fff; transform: translateX(-50%);
+}
+
+.header .nav >li:nth-of-type(3) {margin-right:32%;}
+.header .nav >li:last-child {margin-right:0;}
+
+.header .nav li >ul {display: none; position:absolute; width:500%; left:-50%;}
+.header .nav li:hover >ul  {display:block;}
+.header .nav li >ul li {float: left;display: block; margin:10px; padding:5px;}
+.header .nav li >ul li a {font-size: 14px; font-weight: 100; letter-spacing: 1px;}
+.header .nav li >ul li:hover a {text-decoration: underline;}
+
+
+ul.util_up {}
+ul.util_up li a {font-size: 13px; font-weight: 100; margin-right: 20px; color:#999;}
+ul.util_up li a:hover {text-decoration: underline;}
+
+ul.util_down {padding-top:5px;}
+ul.util_down li {width: 45px; height:45px;}
+ul.util_down li a {display: block; width: 100%; height: 100%;}
+
+.util_left {position: absolute; left: 0; top:14px;}
+.util_left ul li {display: inline-block;}
+.util_left ul.util_down li:nth-of-type(1) a {
+    background:url(../img/ico-sitemap-white.png) no-repeat center;
+}
+.util_left ul.util_down li:nth-of-type(2) a {
+    background:url(../img/ico-search-white.png) no-repeat center;
+}
+
+.util_right {position: absolute; right: 0; top:14px;}
+.util_right ul li {display: inline-block; }
+.util_right ul.util_up li a {margin-right:0; margin-left:20px;}
+
+.util_right ul.util_down {text-align: right;}
+.util_right ul.util_down li:nth-of-type(1) a {
+    background:url(../img/ico-schedule-white.png) no-repeat center;
+}
+.util_right ul.util_down li:nth-of-type(2) a {
+    background:url(../img/ico-mymega-white.png) no-repeat center;
+}
+
+/* 미디어 쿼리 */
+
+@media (max-width:1280px){
+.container {width: 100%;}
+.header #nav {padding:20px 100px 0px;}
+}
+
+@media (max-width:1024px){
+.header .nav >li {width: 12.5%;}
+.header .nav >li a {font-size: 16px;}
+.header .nav >li:nth-of-type(3) {margin-right:22%;}
+}
+
+@media (max-width:960px){
+.header #nav {display:none;}
+.header .util_up {display:none;}
+.header h1 {top:18px;}
+}
+
+@media (max-width:768px){
+    
+}
+
+@media (max-width:480px){
+    .header .util_right {display: none;}
+    .header .util_left {width: 100%;}
+    .header .util_left .util_down li {position: absolute; left: 0;}
+    .header .util_left .util_down li:nth-of-type(2) {left:auto; right:0;}
+}
+
+@media (max-width:320px){
+    
+}
+
