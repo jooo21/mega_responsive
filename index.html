@@ -11,7 +11,8 @@
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
       <script src="assets/js/html5shiv.min.js"></script>
@@ -45,7 +46,7 @@
                             <li><a href="#">고객센터</a></li>
                         </ul>
                         <ul class="util_down">
-                            <li><a href="#" title="메뉴버튼"><span class="ir_so">메뉴버튼</span></a></li>
+                            <li><a href="#" title="메뉴버튼" class="nav_on"><span>메뉴버튼</span></a></li>
                             <li><a href="#" title="검색"><span class="ir_so">검색</span> </a></li>
                         </ul>
                     </div>
@@ -126,12 +127,348 @@
             </div>
         </div>
     </header>
-    <div id="banner"></div>
+    <!-- //header -->
+    <section id="banner">
+        <div class="banner_bg">
+            <img src="img/slide01.jpg" alt="배너배경이미지">
+        </div>
+        <div class="container">
+            <div class="row">
+                <h2>박스오피스</h2>
+                <a href="#" class="ban_more">더 많은 영화보기</a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide01.jpg" alt="영화포스터1">
+                                </figure>
+                                <div class="rank"><strong>1</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;Smet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. iste veritatis natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>8.6</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>499</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide02.jpg" alt="영화포스터2">
+                                </figure>
+                                <div class="rank"><strong>2</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;Amet consectetur dolor sit amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatiscing elit.cing elit. natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>9.0</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>789</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide03.jpg" alt="영화포스터3">
+                                </figure>
+                                <div class="rank"><strong>3</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;nisi repudiandae sit amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Cur adipisicing elit. Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatis natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>6.4</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>55</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide04.jpg" alt="영화포스터4">
+                                </figure>
+                                <div class="rank"><strong>4</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;repudiandae, iste amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatis ipsum dolor sit amet consectetur adipisicing elit. Hicnatus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>8.9</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>39</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide05.jpg" alt="영화포스터5">
+                                </figure>
+                                <div class="rank"><strong>5</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;Hic accusantium veniam amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatis natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>3.9</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>101</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide06.jpg" alt="영화포스터6">
+                                </figure>
+                                <div class="rank"><strong>6</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;dolor sit ipsum dolor sit amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatis natus ipsaid molestiaassumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>5.1</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>96</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide07.jpg" alt="영화포스터7">
+                                </figure>
+                                <div class="rank"><strong>7</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;molestias nisi sit amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Lbdvbr sit amet consectetur adipisicing elit. Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatis natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>9.6</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>345</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide08.jpg" alt="영화포스터8">
+                                </figure>
+                                <div class="rank"><strong>8</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;adipisicing elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium veniam aliquid molestias nisiisicing elit. Hic accusantium veniam aliis repudiandae, iste veritatis natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>9.4</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>751</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide09.jpg" alt="영화포스터9">
+                                </figure>
+                                <div class="rank"><strong>9</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;ipsa assumenda sit amet consectetur adipisicing elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.sicing elit. Hic accusantium veniam aliquid molestias nisi repudiandae, iste veritatis natus !</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>7.6</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>99</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="poster">
+                                <figure>
+                                    <img src="img/slide10.jpg" alt="영화포스터10">
+                                </figure>
+                                <div class="rank"><strong>10</strong></div>
+                                <div class="mx">
+                                    <span class="d"><em class="ir_pm">Dolby</em></span>
+                                    <span class="m"><em class="ir_pm">mx</em></span>
+                                </div>
+                                <div class="li_hover">
+                                    <div class="ban_sum">
+                                        <p>&#34;adipisicing ipsum dolor sit amet consectetur  elit.&#34;</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium veniam aliquid molestia udiandae, iste veritatis natus ipsa assumenda!</p>
+                                    </div>
+                                    <div class="score">
+                                        관람평
+                                        <span>8.2</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="infor clearfix">
+                                <div class="heart"><i class="fa fa-heart-o"></i>36</div>
+                                <div class="infor_btn"><a href="#">예매</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_nav">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <form action="/">
+                                <fieldset>
+                                    <input id="ban_search" type="search" placeholder="영화명을 입력해 주세요.">
+                                    <label for="ban_search">영화 검색창</label>
+                                </fieldset>
+                            </form>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                        <li><a href="#"><i class="ban_icon bi01"></i>상영시간표</a></li>
+                        <li><a href="#"><i class="ban_icon bi02"></i>박스오피스</a></li>
+                        <li><a href="#"><i class="ban_icon bi03"></i>빠른예매</a></li>
+                    </ul>
+                </div>
+                <div class="moving_mouse">
+                    <img src="img/ico-mouse.png" alt="마우스 아이콘">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+
     <div id="con"></div>
     <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/modernizr-custom.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+         //영화차트 이미지 슬라이드
+         var swiper = new Swiper('.swiper-container',{
+            slidesPerView: 4,
+            spaceBetween: 24,
+            mousewheel: {
+                invert: true,
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            autoplay: {
+                delay:5000,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 24
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
+            }
+        });
+        $('.swiper-container').on('mouseenter', function(e){
+            // console.log('stop autoplay');
+            swiper.autoplay.stop();
+        })
+        $('.swiper-container').on('mouseleave', function(e){
+            // console.log('start autoplay');
+            // swiper.autoplay.start();
+        })
+    </script>
 </body>
 </html>
